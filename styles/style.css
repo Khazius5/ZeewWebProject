@@ -1,0 +1,141 @@
+body {
+    background-color: #202020;
+    font-family: Arial, sans-serif;
+    margin: .65vw;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.music__nav {
+    height: 100vh;
+    width: 250px;
+    background-color: #212121; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: 1px solid #444; /* Agrega la línea aquí */
+}
+
+.music__nav p {
+    /* DovuX Life */
+    position: absolute;
+    left: 80px;
+    top: 10px;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    color: white;
+}
+
+.music__logo img {
+    /* LOGO DovuX Life  */
+    position: absolute;
+    width: 50px;
+    height: 47px;
+    left: 23px;
+    top: 16px;
+}
+
+.music__sidebar {
+    position: absolute;
+    top: 150px;
+    left: 60px;
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.music__sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.music__sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.music__sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.music__sidebar ul li a:hover {
+    color: #1e88e5;
+    /* Color destacado al pasar el cursor */
+}
+
+.music__header {
+    margin: .65vw;
+    padding: 0;
+    margin-top: 30px;
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+    justify-content: flex-end; /* Alinea los botones a la derecha */
+    padding-right: 20px; /* Espacio desde el borde derecho */
+}
+
+.music__header__register a, .music__header__login a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.music__header__register a {
+    color: #fff;
+}
+
+.music__header__login a {
+    color:black;
+    background-color: #FF63D6; /* Fondo rosado para "Iniciar Sesión" */
+}
+
+.music__header__login:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    transition: transform .3s;
+}
+
+.music__container{
+    position: absolute;
+    top: 45px;
+    left: 310px;
+    color:#FF63D6
+}
+
+.music__albums, .music__artists {  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.music__album, .music__artist{
+    background-color: #212121;
+    color: #fff;
+    padding: 20px;
+}
+
+.music__album:hover, .music__artist:hover{
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    transition: transform .3s;
+}
+
+.music__album img, .music__artist img{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+}
